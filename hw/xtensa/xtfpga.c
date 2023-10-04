@@ -444,7 +444,7 @@ static void lx_init(const LxBoardDesc *board, MachineState *machine)
         }
         if (dtb_filename) {
             int fdt_size;
-            void *fdt = load_device_tree(dtb_filename, &fdt_size);
+            void *fdt = NULL; //load_device_tree(dtb_filename, &fdt_size);
             uint32_t dtb_addr = tswap32(cur_lowmem);
 
             if (!fdt) {

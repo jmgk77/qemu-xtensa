@@ -109,3 +109,9 @@ cscope.*
 tags
 TAGS
 *~
+
+/bin/
+/etc/
+/libexec/
+/share/
+/tests/qemu-iotests/common.env
